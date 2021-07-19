@@ -109,16 +109,15 @@ class TreeItemProvider
     }
     if (element.type === "project") {
       const { type, ...project } = element;
-      return getTargetFramework(project.projectResolvedPath)
-        .catch((_) => undefined)
-        .then((targetFramework) =>
+      return getTargetFramework(project.projectResolvedPath).then(
+        (targetFramework) =>
           project.projectSettings.targetFrameworks.map((framework) => ({
             type: "targetFramework",
             framework,
             isActive: framework === targetFramework,
             id: `${element.id}|${framework}`,
           }))
-        );
+      );
     }
     if (element.type === "targetFramework") {
       return [];
