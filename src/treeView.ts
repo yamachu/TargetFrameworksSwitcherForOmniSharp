@@ -1,12 +1,12 @@
-import {
+import type {
   ProjectInfo,
   ProjectSettings,
 } from "@yamachu/node-csproj-modifier/dist/Types";
 import {
   getTargetFramework,
+  insertTargetFrameworkSwitcherImporter,
   listing,
   switchTargetFramework,
-  insertTargetFrameworkSwitcherImporter,
 } from "@yamachu/node-csproj-modifier/dist/Usecases";
 import * as vscode from "vscode";
 
