@@ -92,6 +92,6 @@
 		"webpack-cli": "^4.7.0"
 	},
 	"dependencies": {
-		"@yamachu/node-csproj-modifier": "1.0.0"
+		"@yamachu/node-csproj-modifier": "1.0.1"
 	}
 }
