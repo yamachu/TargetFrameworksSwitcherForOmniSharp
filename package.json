@@ -3,6 +3,7 @@
 	"displayName": "TargetFrameworksSwitcher for C#",
 	"description": "Make it easy to change the TargetFramework that OmniSharp analyzes.",
 	"version": "1.0.0",
+	"publisher": "yamachu",
 	"author": {
 		"name": "yamachu"
 	},
