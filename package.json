@@ -1,13 +1,24 @@
 {
-	"name": "targetframeworksswitcherforomnisharp",
-	"displayName": "TargetFrameworksSwitcherForOmniSharp",
-	"description": "",
-	"version": "0.0.1",
+	"name": "targetframeworksswitcher",
+	"displayName": "TargetFrameworksSwitcher for C#",
+	"description": "Make it easy to change the TargetFramework that OmniSharp analyzes.",
+	"version": "1.0.0",
+	"author": {
+		"name": "yamachu"
+	},
+	"license": "MIT",
+	"repository": {
+		"url": "https://github.com/yamachu/TargetFrameworksSwitcherForOmniSharp.git",
+		"type": "git"
+	},
+	"bugs": {
+		"url": "https://github.com/yamachu/TargetFrameworksSwitcherForOmniSharp/issues"
+	},
 	"engines": {
 		"vscode": "^1.57.0"
 	},
 	"categories": [
-		"Other"
+		"Programming Languages"
 	],
 	"activationEvents": [
 		"workspaceContains:*.sln",
