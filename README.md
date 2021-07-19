@@ -1,70 +1,25 @@
-# targetframeworksswitcherforomnisharp README
+# TargetFrameworksSwitcher for OmniSharp
 
-This is the README for your extension "targetframeworksswitcherforomnisharp". After writing up a brief description, we recommend including the following sections.
+This extension improves the efficiency of development for projects where multiple TargetFramework are defined.
+
+Currently, OmniSharp which is used to analyze C# code in VSCode, is set to analyze the first TargetFramework when multiple TargetFrameworks are defined.
+
+https://github.com/OmniSharp/omnisharp-roslyn/blob/da1e65b1e2badf80adc7db8ccd37e4cf253ca7b2/src/OmniSharp.MSBuild/ProjectLoader.cs#L166-L182
+
+If you set the value of TargetFramework, it will take precedence over it.
+This extension makes it easy to set that up.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+### Switch Target Framework
 
-For example if there is an image subfolder under your extension project workspace:
+![SwitchTarget](./docs/resources/switch_target.gif)
 
-\!\[feature X\]\(images/feature-x.png\)
+### Initialize Extension
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+![Initialize](./docs/resources/initialize.gif)
 
-## Requirements
+## Notes
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+This extension adds `TargetFrameworkSwitcher.targets` file to project directory.
+Since this file overrides default __TargetFramework__, it is recommended that you add that file to gitignore so that it does not change the behavior in CI or other contributors.
