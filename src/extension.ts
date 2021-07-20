@@ -8,6 +8,11 @@ import { TreeView } from "./treeView";
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
   new TreeView(context);
+  vscode.commands.executeCommand(
+    "setContext",
+    "TargetFrameworkSwitcherTreeView:showTree",
+    true
+  );
 }
 
 // this method is called when your extension is deactivated

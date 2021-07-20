@@ -33,7 +33,9 @@
 			"explorer": [
 				{
 					"id": "TargetFrameworkSwitcherTreeView",
-					"name": "FrameworkSwitcher"
+					"name": "FrameworkSwitcher",
+					"visibility": "hidden",
+					"when": "TargetFrameworkSwitcherTreeView:showTree"
 				}
 			]
 		},
