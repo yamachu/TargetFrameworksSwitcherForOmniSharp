@@ -25,7 +25,7 @@ export class TreeView {
     const provider = new TreeItemProvider(
       vscode.workspace.workspaceFolders
         ?.slice(0, 1)
-        .map((v) => v.uri.path)[0] ?? context.asAbsolutePath(".")
+        .map((v) => v.uri.fsPath)[0] ?? context.asAbsolutePath(".")
     );
     const view = vscode.window.createTreeView(
       "TargetFrameworkSwitcherTreeView",
