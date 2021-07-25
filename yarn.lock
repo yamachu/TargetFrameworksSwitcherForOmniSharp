@@ -356,10 +356,10 @@
   resolved "https://registry.yarnpkg.com/@xtuc/long/-/long-4.2.2.tgz#d291c6a4e97989b5c61d9acf396ae4fe133a718d"
   integrity sha512-NuHqBY1PB/D8xU6s/thBgOAiAP7HOYDQ32+BFZILJ8ivkUkAHQnWfn6WhL79Owj1qmUnoN/YPhktdIoucipkAQ==
 
-"@yamachu/node-csproj-modifier@1.0.1":
-  version "1.0.1"
-  resolved "https://npm.pkg.github.com/download/@yamachu/node-csproj-modifier/1.0.1/3e81f6adc7dbd8f4ce8702ae3a29bc440d29b6a6d2d9bf5ec9e5a76ba5f73374#578b968130af6174b845b904d5d3657f26e04293"
-  integrity sha512-O522SyHTaDLY4wosM7+bktiGdXRjaFoVbKCnzv/A3vDst/9MlscRpNRfbISctJqT+Xc/Z3XqI6NOo9iD9mTstw==
+"@yamachu/node-csproj-modifier@1.0.2":
+  version "1.0.2"
+  resolved "https://npm.pkg.github.com/download/@yamachu/node-csproj-modifier/1.0.2/bd2076cd874a953c6e9db50f23f363ac47f15dfa031d2806be8dea94ffb4f13e#146a40de3b3691322d1dd2b7a1c462779aca111d"
+  integrity sha512-TKSQfM4UlBMQbj8KDMCd12x8S8kVVHr4CG2DkgyScX2J2+LYv66nQfBIkoQcJkfaSS+rwBmgj481K83Lf1m41w==
   dependencies:
     fast-xml-parser "3.19.0"
     touch "3.1.0"
