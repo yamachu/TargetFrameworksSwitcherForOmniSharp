@@ -1,5 +1,9 @@
 # Change Log
 
+## [1.0.3]
+
+- Support solution file that contains non project `Project` entry
+
 ## [1.0.2]
 
 - Fix search path in Windows
