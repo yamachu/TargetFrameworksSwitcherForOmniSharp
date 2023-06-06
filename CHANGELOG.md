@@ -1,5 +1,10 @@
 # Change Log
 
+## [1.1.0]
+
+- Support solution file that contains multiple `TargetFrameworks` entries
+- Support searching solution files in sub-folders
+
 ## [1.0.3]
 
 - Support solution file that contains non project `Project` entry
