@@ -1,7 +1,7 @@
 .PHONY: package __publish
 
 package:
-	vsce package
+	npx vsce package
 
 __publish:
-	vsce publish
+	npx vsce publish
